@@ -53,7 +53,7 @@
           "id": "previewLinks",
           "label": "Preview links",
           "type": "json",
-          "default": "[\n  {\n    \"text\": \"${GLOBAL_PREVIEW_TEXT}\",\n    \"link\": \"${GLOBAL_BASE_URL}/${locale}/blog/${slug}/?secret=${GLOBAL_PREVIEW_SECRET}\"\n  },\n  {\n    \"text\": \"${GLOBAL_LIVE_TEXT}\",\n    \"link\": \"${GLOBAL_BASE_URL}/${locale}/blog/${slug}\"\n  }\n]",
+          "default": "[\n  {\n    \"text\": \"${GLOBAL_PREVIEW_TEXT}\",\n    \"link\": \"${GLOBAL_BASE_URL}/${locale}/blog/${slug}/?secret=${GLOBAL_PREVIEW_SECRET}&environment=${environment}\"\n  },\n  {\n    \"text\": \"${GLOBAL_LIVE_TEXT}\",\n    \"link\": \"${GLOBAL_BASE_URL}/${locale}/blog/${slug}\"\n  }\n]",
           "hint": "A JSON array of buttons to render in the sidebar. See the plugin home page for an example."
         }
       ]

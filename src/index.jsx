@@ -74,6 +74,7 @@ window.DatoCmsPlugin.init().then((plugin) => {
       const entity = {
         ...global,
         id: plugin.itemId,
+        environment: plugin.environment
       };
       
       Object.keys(plugin.fields)
@@ -85,7 +86,7 @@ window.DatoCmsPlugin.init().then((plugin) => {
             entity[fieldKey] = fieldValue;
           }
         });
-      // console.log("entity", entity);
+      // console.log("plugin", plugin);
 
       let locale = plugin.locale;
       const buttons = JSON.parse(plugin.parameters.instance.previewLinks) || [];
